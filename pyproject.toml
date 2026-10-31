@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "backskills-mcp"
+version = "0.2.0"
+description = "MCP client for backskills.ai: watch, version and diff agent skills and MCP servers; find what to chain next."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["mcp", "model-context-protocol", "agents", "skills"]
+
+[project.urls]
+Homepage = "https://backskills.ai"
+Repository = "https://github.com/domco685/backskills-mcp"
+
+[project.scripts]
+backskills-mcp = "backskills_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backskills_mcp"]

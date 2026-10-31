@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "ai.backskills/backskills",
+  "title": "backskills",
+  "description": "Changelog + weaving graph for agent skills and MCP servers. Watch, diff, find what to chain next.",
+  "version": "0.2.0",
+  "websiteUrl": "https://backskills.ai",
+  "repository": {
+    "url": "https://github.com/domco685/backskills-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://backskills.ai/mcp"
+    }
+  ]
+}
